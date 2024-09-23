@@ -1,5 +1,5 @@
-const obj = require("./data.json");
-const { User } = require("./connection");
+const obj = require("../data.json");
+const { User } = require("../connection");
 
 async function alluserGet(req, res) {
   const allUser = await User.find({});

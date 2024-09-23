@@ -8,7 +8,7 @@ const {
   ChannelGet,
   createUser,
   userCreate,
-} = require("./controller.js");
+} = require("../router_controller/controller");
 
 router.get("/api/user", alluserGet);
 router.post("/api/user/signup", userCreate);
