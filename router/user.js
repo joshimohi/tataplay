@@ -14,6 +14,6 @@ router.get("/api/user", alluserGet);
 router.post("/api/user/signup", userCreate);
 router.route("/api/user/:id").post(userLogin).patch(userUpdate);
 router.get("/", homeGet);
-router.route("/api/v1/channels").get(ChannelGet).post(createUser);
+router.get("/api/v1/channels", ChannelGet);
 
 module.exports = router;
