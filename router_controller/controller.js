@@ -8,7 +8,7 @@ async function alluserGet(req, res) {
     return userData;
   });
   return res.status(200).json({ data });
-}
+};
 async function userCreate(req, res) {
   const { username, email, password } = req.body;
   if (
