@@ -1,4 +1,5 @@
 const obj = require("../data.json");
+const playlist = require("../playlist.m3u");
 const { User } = require("../connection");
 
 async function alluserGet(req, res) {
@@ -37,6 +38,8 @@ async function homeGet(req, res) {
 const ChannelGet = async (req, res) => {
   res.status(200).json(obj);
 };
+const playlistlGet =  async (req, res) => {
+  res.status(200).json(playlist);
 const createUser = async (req, res) => {
   res.status(200).json({ method: "post" });
 };
