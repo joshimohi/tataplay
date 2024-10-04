@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const mongoUrl = process.env.DBHOST;
 
-mongoose.connect(mongoUrl).then(console.log("mongodb con"));
+mongoose.connect("mongodb+srv://sabujmandal888:Riyadas11@cluster0.lzanr.mongodb.net/sabujmandal888?retryWrites=true&w=majority&appName=Cluster0").then(console.log("mongodb con"));
 
 const userSchema = new mongoose.Schema(
   {
